@@ -44,7 +44,7 @@ This can be done just as easily. The `.translate` method expects an object as an
 
 Unless an error such as a wrong language identifier or request failed occurs, you should be primarily directly facing DeepL API responses, which are well documented on their own website @ https://www.deepl.com/docs-api/translate-text/translate-text
 
-The one major difference is that due to the lack of multiple texts support, the module will automatically provide the first object in `translations`, which makes it quicker to work with.
+The one major difference is that due to the lack of multiple texts support, the module will automatically provide the first object in the `translations` array, which makes it quicker to work with.
 
 #### Special
 

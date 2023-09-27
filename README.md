@@ -48,11 +48,9 @@ The one major difference is that due to the lack of multiple texts support, the 
 
 #### Special
 
-`text` - String, required - Text to be translated
-
-`to` - String, required - Language to translate the text into. This can be either the language's name in English (case-insensitive) or it's shorthand.
-
-`from` - String, optional - Language from which to translate. Same terms apply as for `to`
+* `text`: string, **required** - Text to be translated
+* `to`: string, **required** - Language to translate the text into. This can be either the language's name in English (case-insensitive) or it's shorthand.
+* `from`: string, *optional* - Language from which to translate. Same terms apply as for `to`
 
 #### Other
 

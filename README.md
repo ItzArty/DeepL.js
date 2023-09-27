@@ -17,14 +17,23 @@ However, in order to properly configure your DeepL instance, you will also need 
 
 ### Translation
 
-Once you have your DeepL instance set up, it's time to perform some translations, which can be achieved using the `.translate` method.
+#### Request
+
+Once you have your DeepL instance set up, it's time to perform some translations, which can be achieved using the async `.translate` method.
+
 ```
-DeepL.translate({
+await DeepL.translate({
   text: 'This is my first translation!',
   to: 'German'
 })
 ```
+
 This can be done just as easily. The `.translate` method expects an object as an argument and looks for the following keys:
+
+#### Response
+
+Unless an error such as a wrong language identifier or request failed occurs, you should be primarily directly facing DeepL API responses, which are well documented on their own website @ https://www.deepl.com/docs-api/translate-text/translate-text
+The one major difference is that due to the lack of multiple texts support, the module will automatically provide the first object in `translations`, which makes it quicker to work with.
 
 #### Special
 
